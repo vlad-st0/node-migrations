@@ -1,0 +1,19 @@
+{
+  "name": "node-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vladimir Stojiljković",
+  "license": "MIT",
+  "scripts": {
+    "migrate": "node -e 'require(\".\").migrate()'",
+    "rollback": "node -e 'require(\".\").rollback()'",
+    "refresh": "node -e 'require(\".\").refresh()'",
+    "fresh": "node -e 'require(\".\").fresh()'",
+    "seed": "node -e 'require(\".\").seed()'"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "mysql2": "^2.3.3",
+    "pg": "^8.8.0"
+  }
+}
